@@ -25,9 +25,26 @@ class _EnglishRandomPageView extends State<EnglishRandomPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              _text,
-              textScaleFactor: _size.toDouble(),
+            AnimatedSwitcher(
+              duration: const Duration(milliseconds: 500),
+              transitionBuilder: (Widget child, Animation<double> animation) {
+                final inAnimation = Tween<Offset>(
+                  begin: const Offset(0.0, -5.0),
+                  end: Offset.zero,
+                ).animate(CurvedAnimation(
+                  parent: animation,
+                  curve: Curves.easeInOutExpo,
+                ));
+                return SlideTransition(
+                  position: inAnimation,
+                  child: child,
+                );
+              },
+              child: Text(
+                _text,
+                key: ValueKey<String>(_text),
+                textScaleFactor: _size.toDouble(),
+              ),
             ),
             ButtonBar(
               alignment: MainAxisAlignment.center,
