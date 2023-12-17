@@ -1,16 +1,25 @@
 # random_picker
 
-A new Flutter project.
+這是一個可以隨機抽取名字的flutter應用
 
-## Getting Started
+## 使用方法
 
-This project is a starting point for a Flutter application.
+1. 在項目目錄下的`lib/data`目錄下創建`name_list.dart`文件
+2. 使用以下格式編輯該文件
+```
+var chineseNameList = [
+  '名字1',
+  '名字2',
+  '名字3',
+];
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+var englishNameList = [
+  'name1',
+  'name2',
+  'name3',
+];
+```
+4. 以此類推
+5. 保存
+6. 運行`flutter pub get`獲取依賴
+7. 運行`flutter build windows`進行編譯
