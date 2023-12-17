@@ -16,10 +16,10 @@ class AboutPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircleAvatar(
-              radius: 64,
+              radius: 128,
               backgroundImage: AssetImage('assets/images/profile_pic.jpg'),
             ),
-            const SizedBox(height: 32),
+            const SizedBox(height: 16),
             const Text(
               'random picker',
               style: TextStyle(
@@ -38,7 +38,7 @@ class AboutPage extends StatelessWidget {
             const SizedBox(height: 4),
             IconButton(
               onPressed: () {
-                launchUrl(Uri.parse('https://github.com/0123-smallbottle'));
+                launchUrl(Uri.parse('https://github.com/0123-smallbottle/random_picker'));
               },
               icon: const Icon(FontAwesomeIcons.github),
               iconSize: 64,
