@@ -36,6 +36,7 @@ class _TabsState extends State<Tabs> {
         child: _pages[_selectedIndex],
       ),
       bottomNavigationBar: NavigationBar( 
+        animationDuration: const Duration(milliseconds: 500),
         destinations: const [
           NavigationDestination(
             icon: Icon(FontAwesomeIcons.dice),
