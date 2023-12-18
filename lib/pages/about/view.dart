@@ -12,8 +12,7 @@ class AboutPage extends StatelessWidget {
         title: const Text('About'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: [
             const CircleAvatar(
               radius: 128,

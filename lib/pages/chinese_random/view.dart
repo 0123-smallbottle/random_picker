@@ -22,8 +22,8 @@ class _ChineseRandomPageView extends State<ChineseRandomPage> {
         ),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
+          shrinkWrap: true,
           children: <Widget>[
             AnimatedSwitcher(
               duration: const Duration(milliseconds: 500),
