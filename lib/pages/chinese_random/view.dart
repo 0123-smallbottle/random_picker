@@ -58,7 +58,7 @@ class _ChineseRandomPageView extends State<ChineseRandomPage> {
                     setState(() {
                       getRandomChineseName();
                       _text = getRandomChineseName();
-                      _size = 18;
+                      _size = 20;
                     });
                   },
                   child: const Text('抽籤'),

@@ -58,7 +58,7 @@ class _EnglishRandomPageView extends State<EnglishRandomPage> {
                     setState(() {
                       getRandomEnglishName();
                       _text = getRandomEnglishName();
-                      _size = 12;
+                      _size = 15;
                     });
                   },
                   child: const Text('Pick Name'),
