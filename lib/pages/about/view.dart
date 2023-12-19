@@ -11,7 +11,7 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('About'),
       ),
-
+      
     body: const Column(
       children: [
         Image(),
